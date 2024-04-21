@@ -1,0 +1,433 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,600;0,700;1,100;1,400;1,500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+  position: fixed;
+  font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  
+}
+
+
+body {
+  background-image: url(mainbg.gif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  z-index: -5;
+  overflow-y: scroll;
+
+}
+
+button {
+  color: black;
+  
+}
+label {
+  color: rgb(163, 0, 0);
+  text-align: left;
+}
+input {
+  color: black;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid black;
+  width: 58vw;
+  padding-bottom: 1.1%;
+}
+
+#sub_btn {
+  background-color: red;
+  color: white;
+  width: 80px;
+  padding: 10px 5px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+}
+
+.machine {
+  /* background-color: black;  */
+   height: 100vh;
+  width: 100vw;
+  user-select: none;
+
+}
+
+.machine * {
+  position: absolute;
+}
+
+#heart{
+  width: 25%;
+  height: 30%;
+  bottom: 0;
+  left: 0;
+  animation: pulse 2s linear;
+}
+
+#iron_man {
+  bottom: 0;
+  right: 0;
+
+}
+
+#time {
+  color: white;
+  top: 10px;
+  left: 10px;
+}
+
+.in_middle {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  z-index: 10000;
+  width: 60vw;
+  height: 92vh;
+  /* overflow-y: scroll; */
+}
+
+.in_middle::-webkit-scrollbar {
+  display: block;
+}
+
+.in_middle::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+.in_middle::-webkit-scrollbar-thumb {
+  background: red;
+  border-radius: 10px;
+}
+
+.icon {
+  height: 50px;
+  width: 50px;
+  object-fit: cover;
+  padding: 3px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.cont * {
+  position: static;
+}
+
+.cont {
+  top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.battery {
+  left: 50%;
+  width: 100px;
+  transform: translateX(-50%);
+}
+
+.clock {
+  width: 180px;
+  letter-spacing: 3px;
+}
+
+.internet {
+  top: 100px;
+  left: 2px;
+  width: 120px;
+  text-align: left;
+}
+
+.in_middle * {
+  position: static;
+}
+
+.temp {
+  top: 10px;
+  right: 20px;
+  text-align: right;
+  font-size: smaller;
+}
+
+.temp * {
+  position: static;
+}
+
+.messages * {
+  position: static;
+}
+
+.messages {
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 400px;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding-bottom: 15px;
+  z-index: 10000;
+}
+
+.usermsg {
+  text-align: right;
+  width: 300px;
+  color: rgb(113, 113, 235);
+}
+
+.jmsg {
+  text-align: left;
+  margin-top: 5px;
+  width: 300px;
+  color: rgb(245, 61, 61);
+}
+
+.messages::-webkit-scrollbar {
+  display: none;
+}
+
+.commands {
+  display: none;
+  background-color: rgb(245, 198, 161);
+  overflow: scroll;
+ 
+}
+
+.commands p {
+  color: rgb(57, 59, 44);
+}
+
+#start_jarvis_btn {
+  border: none;
+  outline: none;
+  position: fixed;
+  left: 5%;
+  height: 9%;
+  transform: translateX(0);
+  top: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+#start_jarvis_btn p {
+  font-size: 16px;
+}
+
+#start_jarvis_btn img {
+  height: 288%;
+  border-radius: 50%;
+}
+
+#stop_jarvis_btn {
+  border: none;
+  outline: none;
+  position: fixed;
+  left:18%;
+  height: 9%;
+  transform: translateX(0);
+  top: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  display: none;
+}
+
+#stop_jarvis_btn p {
+  font-size: 16px;
+}
+
+#stop_jarvis_btn img {
+  height: 288%;
+  filter: blur(5px);
+  border-radius: 50%;
+}
+
+.small_jarvis {
+  position: absolute;
+  top: calc(100vh - 370px);
+  left: calc(100vw - 370px);
+}
+
+.small_jarvis button {
+  right: 0;
+  bottom: 0;
+  background-color: black;
+  height: 250px;
+  width: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  border: none;
+}
+.small_jarvis button img{
+  right: 0;
+  bottom: 0;
+  height: 250px;
+  width: 250px;
+}
+.small_jarvis button p {
+  font-size: 50px;
+}
+
+.new_jarvis_window {
+  display: none;
+}
+
+@media (max-width: 300px) {
+  .hide_on_small {
+    display: none;
+  }
+  .new_jarvis_window {
+    display: block;
+  }
+  #start_jarvis_btn {
+    display: none;
+  }
+}
+
+/* calendar */
+.calendar {
+  position: absolute;
+  top: 11%;
+  right: 21%;
+  height: 22%;
+  z-index: 100000000;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background: #8e2de2; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #4a00e0,
+    #8e2de2
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #4a00e0,
+    #8e2de2
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.calendar * {
+  position: static;
+  width: 140px;
+  margin: 1px 0;
+}
+
+.calendar #month {
+  background-color: black;
+  padding: 3px 20px;
+  margin-top: 5px;
+}
+
+.calendar #date {
+  font-size: 30px;
+}
+
+
+@keyframes pulse {
+  0% {
+      transform: scale(1);
+  }
+  50% {
+      transform: scale(1.1);
+  }
+  100% {
+      transform: scale(1);
+  }
+}
+
+@media (max-width: 768px) {
+
+  body {
+    background-image: url(res-bg.gif);
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    /* background-attachment: fixed;  */
+    z-index: -5;
+    /* overflow-y: scroll; */
+  
+  }
+
+  
+.battery {
+  left: 81%;}
+
+  *{
+    box-sizing: border-box;
+  }
+  #start_jarvis_btn{
+    /* bottom: -10%; */
+    top: 74%;
+    left: 19%;
+    height: 28%;
+  }
+
+  #stop_jarvis_btn{
+    /* bottom: -14%; */
+    top: 74%;
+    left: 64%;
+    height: 28%;
+    z-index: -20;
+  }
+
+  #start_jarvis_btn img, #stop_jarvis_btn img{
+    height: 74%;
+  }
+  #start_jarvis_btn p, #stop_jarvis_btn p{
+    font-size: 11px;
+  }
+
+  .clock{
+    top:15%;
+  }
+  .internet{
+    top: 23%;
+  }
+  .battery{
+    left: 21%;
+    top: 2%;
+  }
+
+  .calendar {
+    top: 32%;
+    right: 55%;
+    height: 13%;
+    font-size: 17px;
+
+  }
+
+  .calendar *{
+    width: 140px;
+    margin: 1px 0px;
+  }
+  .calendar #month {
+    padding: 0px 20px;
+    margin-top: 5px;
+    font-size: 10px;
+  }
+  .calendar #date{
+    font-size: 20px;
+  }
+
+  .small_jarvis{
+    display: none;
+  }
+}

@@ -385,7 +385,7 @@ input {
     top: 74%;
     left: 64%;
     height: 28%;
-    z-index: -20;
+    z-index: 250000;
   }
 
   #start_jarvis_btn img, #stop_jarvis_btn img{

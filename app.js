@@ -180,7 +180,7 @@ readOut("Now Im Ready to go");
 document.querySelector("#stop_jarvis_btn").addEventListener("click", () => {
   stopingR = true;
   recognition.stop();
-  document.querySelector("#start_jarvis_btn").style.visibility= "visible";
+  readOut("ok sir I will take a nap");
 })
 
 // show waether

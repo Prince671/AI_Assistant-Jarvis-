@@ -51,7 +51,7 @@ let ytbWindow;
 
 // show a warn to check for all the commands
 console.warn('*to check for the commands speak "what are your commands"');
-// alert('to check for the commands speak "what are your commands');
+alert('To Know The Commands Speak => "what are your commands');
 
 // date and time
 let date = new Date();

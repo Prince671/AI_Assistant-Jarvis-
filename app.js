@@ -322,7 +322,7 @@ recognition.onresult = function (event) {
     readOut("sir, My name is Aira,")
   }
   else if(transcript.includes( 'who created you')){
-    readOut("My Owner is Prince Soni")
+    readOut("My Owner is Prince Soni , Abhishek Gupta, Abhishek Kumar Gupta, Keshav Singh ")
   }
   // jarvis bio
   else if (transcript.includes('who are you') || transcript.includes('introduce yourself')) {

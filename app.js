@@ -292,7 +292,11 @@ recognition.onresult = function (event) {
   if (transcript.includes('good') || transcript.includes('nice') || transcript.includes('excellent') || transcript.includes('amazing')) {
     readOut("Thank You Sir");
   }
-  // hi - hello
+
+else if (transcript.includes('greet everyone')) {
+    readOut(`Hello Everyone, Good Morining ,  Respected H O D Sir,  Mr. Sanjay Gupta Sir , and Respected Teacher , Sandeep Sir, Swapnshree Mam, Mohani Mam, Good Morning all of you`);
+  }
+ 
 
   
   // some casual commands

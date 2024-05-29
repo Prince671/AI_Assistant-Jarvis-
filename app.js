@@ -293,8 +293,8 @@ recognition.onresult = function (event) {
     readOut("Thank You Sir");
   }
 
-else if (transcript.includes('greet everyone')) {
-    readOut(`Hello Everyone, Good Morining ,  Respected H O D Sir,  Mr. Sanjay Gupta Sir , and Respected Teacher , Sandeep Sir, Swapnshree Mam, Mohani Mam, Good Morning all of you`);
+else if (transcript.includes('greet them')) {
+    readOut(`Hello Everyone, Good Morining ,  Respected H O D of Computer Science,  Mr. Sanjay Gupta Sir , and Respected Teacher , Sandeep Sir, Swapnshree Mam, Mohani Mam, Good Morning all of you`);
   }
  
 
